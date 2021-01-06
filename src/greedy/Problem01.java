@@ -1,12 +1,14 @@
 package greedy;
 
-import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class Problem01 {
 
     /*
         컴파일
+        - 컴파일러
+        - 패키지
+
         케이스 테스트 - 포맷팅
         최솟값, 최댓값
      */
@@ -40,7 +42,6 @@ public class Problem01 {
 
         // 출력
         double total = minPasta + minJuice + ((minPasta + minJuice) * 0.1);
-        DecimalFormat form = new DecimalFormat("#.#");
-        System.out.println(form.format(total));
+        System.out.printf("%.1f%n", total);
     }
 }
